@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cytech.view.Controller.MdpOublieRespoController">
+   <children>
+      <Text layoutX="78.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saisissez votre adresse mail pour recevoir un mail de récupération du mot de passe." wrappingWidth="454.39999999999986" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <GridPane layoutY="151.2" prefHeight="30.0" prefWidth="539.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="175.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.4000244140625" minWidth="10.0" prefWidth="85.20000457763672" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="455.59998321533203" minWidth="10.0" prefWidth="454.7999954223633" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Email">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField prefWidth="200.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button defaultButton="true" layoutX="481.0" layoutY="296.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Valider" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Button cancelButton="true" layoutX="30.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleAnnuler" prefHeight="50.0" prefWidth="150.0" text="Annuler" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,219 @@
+/* application.css */
+
+/* Police de base pour toute l'application */
+.root {
+    -fx-font-family: "Arial";
+}
+
+/* Style pour les boutons */
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: 400;
+    -fx-text-alignment: center;
+    -fx-min-width: 80px;
+    -fx-min-height: 32px;
+    -fx-background-color: #ffffff;
+    -fx-border-width: 2px; /* Largeur de la bordure plus fine */
+    -fx-border-radius: 10px;
+    -fx-background-insets: 0, 2;
+    -fx-padding: 5px;
+    -fx-background-color:
+        linear-gradient(from 0% 0% to 100% 100%, #0000ff, #808080), /* Dégradé de bleu à gris pour la bordure */
+        #ffffff; /* Couleur de fond du bouton */
+}
+
+.button:hover {
+    -fx-background-color:
+        linear-gradient(from 0% 0% to 100% 100%, #0000ff, #808080), /* Garder le dégradé de la bordure */
+        #d3d3d3; /* Gris clair pour l'effet de survol */
+}
+
+/* Style pour les ImageView */
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0.0, 0.0);
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+}
+
+/* Styles pour les bulles de couleur avec dégradé */
+#bubble1 {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #0000ff, #add8e6); /* Dégradé de bleu */
+}
+
+#bubble2 {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #808080, #d3d3d3); /* Dégradé de gris */
+}
+
+#bubble3 {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #add8e6, #ffffff); /* Dégradé de gris */
+}
+
+#bubble11 {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #ffffff, #f0f0f0); /* Dégradé de blanc */
+}
+
+#bubble111 {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #add8e6, #ffffff); /* Dégradé de bleu clair à blanc */
+}
+
+#bubble12 {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #d3d3d3, #ffffff); /* Dégradé de gris clair à blanc */
+}
+
+/* Style pour le conteneur avec bordure dégradée */
+#titlePane {
+    -fx-background-color: white;
+    -fx-border-width: 2px; /* Ajustez cette valeur si nécessaire */
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #0000ff, #808080); /* Dégradé de bleu à gris */
+    -fx-border-radius: 10px;
+}
+
+/* Style spécifique pour le texte du titre */
+.text-title {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000; /* Couleur du texte en noir */
+    -fx-border-width: 2px;
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #0000ff, #808080); /* Dégradé de bleu à gris */
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+    -fx-background-color: white;
+}
+
+/* Styles pour les conteneurs des titres */
+.title-pane {
+    -fx-background-color: white;
+    -fx-border-width: 2px;
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #0000ff, #808080); /* Dégradé de bleu à gris */
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+}
+
+/* Style spécifique pour les ListView */
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 2px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+
+.list-view .list-cell {
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+/* Style spécifique pour les étiquettes */
+.label {
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 18px;
+    -fx-text-fill: #333;
+}
+
+/* Style spécifique pour les valeurs des étiquettes */
+.label-value {
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 18px;
+    -fx-text-fill: #555;
+}
+
+/* Style spécifique pour l'Accordion */
+.accordion {
+    -fx-border-width: 2px;
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #0000ff, #808080); /* Dégradé de bleu à gris */
+    -fx-border-radius: 10px;
+    -fx-padding: 5; /* Ajuster le padding pour éviter les débordements */
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0.0, 0.0); /* Effet ombre */
+}
+
+.titled-pane {
+    -fx-background-color: #f0f0f0; /* Couleur de fond des sections */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 14px; /* Taille de la police des sections */
+    -fx-border-color: #cccccc; /* Couleur de la bordure des sections */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 0; /* Ajuster la taille des bandeaux */
+}
+
+.titled-pane > .title {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #ffffff, #add8e6); /* Dégradé de bleu clair à blanc */
+    -fx-font-weight: bold;
+    -fx-padding: 5px; /* Ajuster la taille des bandeaux */
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px; /* Taille de la police du titre */
+}
+
+.titled-pane > .content {
+    -fx-padding: 5px; /* Ajuster le padding pour éviter les débordements */
+    -fx-background-color: #ffffff;
+}
+
+.titled-pane .content > * {
+    -fx-font-size: 12px; /* Taille de la police du contenu */
+}
+
+/* Styles pour les Labels */
+.label-title {
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000; /* Couleur du texte en noir */
+    -fx-border-width: 2px;
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #0000ff, #808080); /* Dégradé de bleu à gris */
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+    -fx-background-color: white;
+}
+
+.label-content {
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 24px;
+    -fx-text-fill: #333;
+    -fx-padding: 10px;
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+/* Style spécifique pour le labelBienvenue */
+.label-bienvenue {
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 32px;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000; /* Couleur du texte en noir */
+    -fx-border-width: 2px;
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #0000ff, #808080); /* Dégradé de bleu à gris */
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+    -fx-background-color: white;
+}
+
+/* Style pour le conteneur GridPane */
+.grid-pane {
+    -fx-background-color: #f9f9f9;
+    -fx-border-width: 2px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10px;
+    -fx-padding: 10px;
+      -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #0000ff, #808080); /* Dégradé de bleu à gris */
+}
+
+/* Style pour une checkbox */
+.check-box {
+	-fx-font-family: "Helvetica";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000; /* Couleur du texte en noir */
+    -fx-border-width: 2px;
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #0000ff, #808080); /* Dégradé de bleu à gris */
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+    -fx-background-color: white;
+}
