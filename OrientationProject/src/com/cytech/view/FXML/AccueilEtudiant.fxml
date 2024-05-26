@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../CSS/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cytech.view.Controller.AccueilEtudiantController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Images/CY_Tech.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="163.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleDonnees" prefHeight="75.0" prefWidth="225.0" text="VOIR MES DONNEES" AnchorPane.topAnchor="224.0" />
+      <Button layoutX="413.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleVoeuxDispo" prefHeight="75.0" prefWidth="225.0" text="VOEUX DISPONIBLES" AnchorPane.rightAnchor="161.39999999999998" AnchorPane.topAnchor="224.0" />
+      <Button fx:id="ficheVoeuxButton" layoutX="163.8" layoutY="334.4" mnemonicParsing="false" onAction="#handleFicheVoeux" prefHeight="75.0" prefWidth="225.0" text="REMPLIR MA FICHE DE VOEUX" AnchorPane.leftAnchor="163.8" AnchorPane.topAnchor="334.4" />
+      <Button layoutX="413.0" layoutY="334.4" mnemonicParsing="false" onAction="#handleResultat" prefHeight="75.0" prefWidth="225.0" text="RESULTAT" AnchorPane.rightAnchor="161.39999999999998" AnchorPane.topAnchor="334.4" />
+      <Button cancelButton="true" layoutX="14.0" layoutY="510.0" mnemonicParsing="false" onAction="#handleSeDeconnecter" prefHeight="50.0" prefWidth="150.0" text="Se déconnecter" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+      <Label fx:id="labelBienvenue" layoutX="206.0" layoutY="124.0" prefHeight="47.0" prefWidth="598.0" styleClass="label-bienvenue" textAlignment="CENTER" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="124.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Text fx:id="voeuxMessage" layoutX="50.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="700.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
